@@ -1,0 +1,199 @@
+.corpo_main {
+  min-height: 600px;
+  /*background: linear-gradient(rgba(0, 0, 0, 0.295), rgba(0, 0, 0, 0.5)), 
+              url('../imagen/img-fundo.png') no-repeat center center / cover;*/
+  display: flex;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.main_content {
+  background-color: var(--branco);
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  align-items: center;
+}
+
+.main-title {
+  color: var(--cor-principal);
+  font-family: var(--fonte-two);
+  font-size: 40px;
+  font-weight: 500;
+  text-align: left;
+  padding: 0 1.2em;
+}
+
+.main-text {
+  padding: 0 1.2em;
+  color: var(--preto);
+  margin: 2.5em 7em;
+  font-size: 18px;
+  line-height: 1.8;
+  text-align: justify;
+}
+.btn_Saiba_mais {
+  text-decoration: none;
+  font-size: 24px;
+  background-color: var(--cor-principal);
+  color: var(--branco);
+  width: 10rem;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  transition: 0.5s;
+  &:hover {
+    color: var(--branco);
+    background-color: var(--cor-principal-high);
+    border-radius: 10px;
+    transform: scale(1.2);
+  }
+}
+.img-psico {
+  height: 33rem;
+  width: 33rem;
+  border: 2px solid var(--branco);
+  border-radius: 10px;
+}
+.foto-psico {
+  display: flex;
+  background: var(--bege-degrade);
+  width: 50%;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (max-width: 767px) {
+  .corpo_main {
+      min-height: auto;
+      flex-direction: column;
+  }
+
+  .main_content {
+      width: 100%;
+
+  }
+
+  .main-title {
+      font-size: 28px;
+      text-align: center;
+      padding: 0 1em;
+  }
+
+  .main-text {
+      padding: 0 1em;
+      margin: 1em;
+      font-size: 14px;
+      line-height: 1.6;
+  }
+
+  .btn_Saiba_mais {
+      font-size: 18px;
+      width: 8rem;
+      padding: 8px;
+      margin-bottom: 1em;
+  }
+
+  .btn_Saiba_mais:hover {
+      transform: scale(1.1);
+  }
+
+  .img-psico {
+      height: 19.5rem;
+      width: 19.5rem;
+  }
+
+  .foto-psico {
+      width: 100%;
+      padding: 1em 0;
+  }
+}
+
+/* Media Query para Tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+  .corpo_main {
+      flex-direction: row; /* Volta para row em tablet */
+  }
+
+  .main_content {
+      width: 60%; /* Ajuste largura para tablet */
+  }
+
+  .main-title {
+      font-size: 32px; /* Ajuste font-size para tablet */
+      text-align: left; /* Volta para left em tablet */
+  }
+
+  .main-text {
+      margin: 2em; /* Ajuste margin para tablet */
+      font-size: 16px; /* Ajuste font-size para tablet */
+  }
+
+  .btn_Saiba_mais {
+      font-size: 20px; /* Ajuste font-size para tablet */
+      width: 10rem; /* Volta para width original em tablet */
+      padding: 10px; /* Volta para padding original em tablet */
+  }
+
+  .img-psico {
+      height: 21rem; /* Ajuste height para tablet */
+      width: 21rem; /* Ajuste width para tablet */
+  }
+
+  .foto-psico {
+      width: 40%; /* Ajuste largura para tablet */
+  }
+}
+
+/* Media Query para Desktop */
+@media (min-width: 992px) {
+  .corpo_main {
+      flex-direction: row; /* Volta para row em desktop */
+  }
+
+  .main_content {
+      width: 70%; /* Volta para largura original em desktop */
+  }
+
+  .main-title {
+      font-size: 40px; /* Volta para font-size original em desktop */
+      text-align: left; /* Volta para left original em desktop */
+      padding: 0 1.2em; /* Volta para padding original em desktop */
+  }
+
+  .main-text {
+      padding: 0 1.2em; /* Volta para padding original em desktop */
+      margin: 2.5em 7em; /* Volta para margin original em desktop */
+      font-size: 18px; /* Volta para font-size original em desktop */
+      line-height: 1.8; /* Volta para line-height original em desktop */
+  }
+
+  .btn_Saiba_mais {
+      font-size: 24px; /* Volta para font-size original em desktop */
+      width: 10rem; /* Volta para width original em desktop */
+      padding: 10px; /* Volta para padding original em desktop */
+  }
+
+  .btn_Saiba_mais:hover {
+      transform: scale(1.2); /* Volta para scale original em desktop */
+  }
+
+  .img-psico {
+      height: 26rem; /* Volta para height original em desktop */
+      width: 26rem; /* Volta para width original em desktop */
+  }
+
+  .foto-psico {
+      width: 50%; /* Volta para largura original em desktop */
+  }
+}
+
+

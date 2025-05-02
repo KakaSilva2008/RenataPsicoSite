@@ -1,0 +1,57 @@
+.aviso {
+    text-align: center;
+    padding: 1em; /* Adicionado padding para melhor espaçamento em telas menores */
+}
+
+.aviso_title {
+    color: var(--tom-escuro);
+    font-family: var(--fonte-two);
+    margin-bottom: 0.5em; /* Reduzido o margin-bottom em telas menores */
+    font-size: 20px; /* Reduzido o font-size em telas menores */
+}
+
+.aviso_text {
+    letter-spacing: 1.2; /* Reduzido o letter-spacing em telas menores */
+    margin: 0 10%; /* Reduzido o margin horizontal em telas menores */
+    font-family: var(--fonte-two);
+    font-size: 12px; /* Reduzido o font-size em telas menores */
+    color: var(--tom-escuro);
+}
+@media (max-width: 767px) {
+    .aviso {
+        padding: 1em;
+    }
+
+    .aviso_title {
+        margin-bottom: 0.5em;
+        font-size: 20px;
+    }
+
+    .aviso_text {
+        letter-spacing: 1.2;
+        margin: 0 10%;
+        font-size: 12px;
+    }
+}
+
+/* Media Query para Tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+    .aviso_text {
+        margin: 0 15%; /* Ajuste margem para tablet */
+        font-size: 13px;
+    }
+}
+
+/* Media Query para Desktop */
+@media (min-width: 992px) {
+    .aviso_title {
+        margin-bottom: 10px;
+        font-size: 24px;
+    }
+
+    .aviso_text {
+        letter-spacing: 1.4;
+        margin: 0 20%;
+        font-size: 14px;
+    }
+}
