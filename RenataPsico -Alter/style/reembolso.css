@@ -1,0 +1,251 @@
+/* reembolso.css */
+.reembolso {
+    background: var(--branco-degrade);
+    padding: 1em; /* Ajuste inicial para telas menores */
+}
+
+.banner_reembolso {
+    padding: 2em 1em 0.5em; /* Ajuste inicial para telas menores */
+    background: var(--marrom-degrade);
+}
+
+.banner_content_reembolso {
+    padding: 0.5em; /* Ajuste inicial para telas menores */
+    text-align: center;
+}
+
+.banner_title_reembolso {
+    font-size: 2rem; /* Ajuste inicial para telas menores */
+    font-weight: 600;
+    font-family: var(--fonte-two);
+    color: var(--tom-escuro);
+}
+
+.reembolso_title {
+    font-size: 24px; /* Ajuste inicial para telas menores */
+    font-weight: 700;
+    margin: 0.5em 0; /* Ajuste inicial para telas menores */
+    font-family: var(--fonte-two);
+    letter-spacing: 3px; /* Ajuste inicial para telas menores */
+}
+
+.t2 {
+    font-size: 18px; /* Ajuste inicial para telas menores */
+    margin-bottom: 0.25em; /* Ajuste inicial para telas menores */
+}
+
+.card {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 0.5em; /* Ajuste inicial para telas menores */
+    margin: 1em auto; /* Ajuste inicial para telas menores */
+    width: 80%; /* Ajuste inicial para telas menores */
+    text-align: center;
+    background-color: var(--branco);
+    color: var(--cor-principal);
+}
+
+.card_reembolso {
+    padding: 1em; /* Ajuste inicial para telas menores */
+}
+
+.reembolso_text{
+    text-indent: 20px; /* Ajuste inicial para telas menores */
+    line-height: 24px;
+    text-align: justify;
+    padding: 0 1em; /* Ajuste inicial para telas menores */
+    font-family: var(--fonte-one);
+    color: var(--tom-escuro);
+    font-size: 14px; /* Ajuste inicial para telas menores */
+}
+
+.ul_reembolso {
+    margin-top: 0.5em; /* Ajuste inicial para telas menores */
+    margin-left: 5%; /* Ajuste inicial para telas menores */
+    padding-left: 0;
+}
+
+.li_format {
+    padding: 0 1em; /* Ajuste inicial para telas menores */
+    line-height: 24px;
+    text-align: justify;
+}
+
+.li_reembolso {
+    font-family: var(--fonte-one);
+    text-align: left;
+    color: var(--tom-escuro);
+    font-size: 14px; /* Ajuste inicial para telas menores */
+    margin: 0.5em 0; /* Ajuste inicial para telas menores */
+    list-style-type: decimal;
+}
+@media (max-width: 767px) {
+    .reembolso {
+        padding: 1em;
+    }
+
+    .banner_reembolso {
+        padding: 2em 1em 0.5em;
+    }
+
+    .banner_content_reembolso {
+        padding: 0.5em;
+    }
+
+    .banner_title_reembolso {
+        font-size: 2rem;
+    }
+
+    .reembolso_title {
+        font-size: 24px;
+        margin: 0.5em 0;
+        letter-spacing: 3px;
+    }
+
+    .t2 {
+        font-size: 18px;
+        margin-bottom: 0.25em;
+    }
+
+    .card {
+        padding: 0.5em;
+        margin: 1em auto;
+        width: 80%;
+    }
+
+    .card_reembolso {
+        padding: 1em;
+    }
+
+    .reembolso_text {
+        text-indent: 20px;
+        padding: 0 1em;
+        font-size: 14px;
+    }
+
+    .ul_reembolso {
+        margin-top: 0.5em;
+        margin-left: 5%;
+    }
+
+    .li_format {
+        padding: 0 1em;
+    }
+
+    .li_reembolso {
+        font-size: 14px;
+        margin: 0.5em 0;
+    }
+}
+
+/* Media Query para Tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+    .reembolso {
+        padding: 1.5em;
+    }
+
+    .banner_reembolso {
+        padding: 2.5em 1.5em 1em;
+    }
+
+    .banner_title_reembolso {
+        font-size: 2.5rem;
+    }
+
+    .reembolso_title {
+        font-size: 28px;
+    }
+
+    .t2 {
+        font-size: 20px;
+    }
+
+    .card {
+        width: 60%;
+        padding: 0.8em;
+        margin: 1.5em auto;
+    }
+
+    .card_reembolso {
+        padding: 1.2em;
+    }
+
+    .reembolso_text {
+        font-size: 15px;
+        padding: 0 1.5em;
+    }
+
+    .ul_reembolso {
+        margin-left: 10%;
+        margin-top: 0.8em;
+    }
+
+    .li_format {
+        padding: 0 2em;
+    }
+
+    .li_reembolso {
+        font-size: 16px;
+        margin: 0.8em 0;
+    }
+}
+
+/* Media Query para Desktop */
+@media (min-width: 992px) {
+    .reembolso {
+        padding: 2em;
+    }
+
+    .banner_reembolso {
+        padding: 3em 2em 1em;
+    }
+
+    .banner_content_reembolso {
+        padding: 1em 1em;
+    }
+
+    .banner_title_reembolso {
+        font-size: 56px;
+    }
+
+    .reembolso_title {
+        font-size: 30px;
+        margin: 1em 0;
+        letter-spacing: 5px;
+    }
+
+    .t2 {
+        font-size: 24px;
+        margin-bottom: 0.5em;
+    }
+
+    .card {
+        width: 50%;
+        padding: 1em;
+        margin: 2em auto;
+    }
+
+    .card_reembolso {
+        padding: 1.5em 2em;
+    }
+
+    .reembolso_text {
+        text-indent: 40px;
+        font-size: 18px;
+        padding: 0 2em;
+    }
+
+    .ul_reembolso {
+        margin-top: 1em;
+        margin-left: 42%;
+    }
+
+    .li_format {
+        padding: 0 2.5em;
+    }
+
+    .li_reembolso {
+        font-size: 18px;
+        margin: 1em 0;
+    }
+}

@@ -1,0 +1,134 @@
+.cabeçalho{
+    display: flex;
+    background-color: var(--branco);
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 1px 1px 4px #1c1c1c;
+    position: sticky;
+    top: 0;
+    z-index: 4;
+}
+.header-menu{
+    display: flex;
+    gap: 40px;
+    margin-right: 40px;
+}
+.header-link{ 
+    font-size: 26px;
+    text-decoration: none;
+    font-family: var(--fonte-two);
+    font-weight: 500;
+    color: var(--cor-principal);
+    transition: 0.5s;
+    &:hover{
+        color: var(--branco);
+        background-color: var(--cor-principal-high);
+        padding: 10px;
+        border-radius: 10px;
+    }
+}
+.logo{
+    height: 80px;
+    width: 170px;
+    text-align: center; /* Centraliza o logo */
+    border: 1px solid var(--branco);
+    border-radius: 25%;
+    
+}
+.container{
+    margin-left: 2em;
+}
+@media (max-width: 767px) {
+    .cabeçalho {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1em;
+        
+    }
+
+    .header-menu {
+        gap: 20px;
+        margin-right: 0;
+        margin-top: 1em;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-link {
+        font-size: 18px;
+        padding: 0.5em;
+        border-radius: 5px;
+    }
+
+    .logo {
+        height: 60px;
+        width: 130px;
+    }
+
+    .container {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+/* Media Query para Tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+    .cabeçalho {
+        flex-direction: row; /* Volta para row em tablet */
+        justify-content: space-between; /* Volta para space-between em tablet */
+        padding: 0 1em;
+    }
+
+    .header-menu {
+        flex-direction: row; /* Volta para row em tablet */
+        gap: 30px; /* Ajuste gap para tablet */
+        margin-top: 0; /* Remove margem superior em tablet */
+        margin-right: 30px;
+    }
+
+    .header-link {
+        font-size: 20px; /* Ajuste font-size para tablet */
+        padding: 8px; /* Ajuste padding para tablet */
+        border-radius: 8px; /* Ajuste border-radius para tablet */
+    }
+
+    .logo {
+        height: 70px; /* Ajuste height para tablet */
+        width: 150px; /* Ajuste width para tablet */
+    }
+
+    .container {
+        margin-left: 30px; /* Ajuste margin-left para tablet */
+        justify-content: flex-start;
+    }
+}
+
+/* Media Query para Desktop */
+@media (min-width: 992px) {
+    .cabeçalho {
+        flex-direction: row; /* Volta para row em desktop */
+        justify-content: space-between; /* Volta para space-between em desktop */
+    }
+
+    .header-menu {
+        flex-direction: row; /* Volta para row em desktop */
+        gap: 40px; /* Volta para o gap original em desktop */
+        margin-right: 40px; /* Volta para a margem original em desktop */
+    }
+
+    .header-link {
+        font-size: 26px; /* Volta para o font-size original em desktop */
+        padding: 10px; /* Volta para o padding original em desktop */
+        border-radius: 10px; /* Volta para o border-radius original em desktop */
+    }
+
+    .logo {
+        height: 80px; /* Volta para o height original em desktop */
+        width: 170px; /* Volta para o width original em desktop */
+    }
+
+    .container {
+        margin-left: 2em; /* Volta para a margem original em desktop */
+    }
+}

@@ -1,0 +1,8 @@
+.artigo{
+    margin: 14em;
+    background-color: var(--tom-escuro);
+}
+.artigo_titulo{
+    font-family: var(--fonte-two);
+    color: var(--branco);
+}

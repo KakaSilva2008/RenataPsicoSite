@@ -1,0 +1,16 @@
+.btn_type_one{
+    transition: 0.5s;
+}
+.btn_type_one:hover{
+    color: var(--branco);
+    background-color: var(--cor-principal);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.normal_hover{
+    transition: 0.5;
+}
+.normal_hover:hover{
+    transform: scale(1.2);
+}

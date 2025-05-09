@@ -1,0 +1,174 @@
+.banner {
+  padding: 2em 1em 1em; /* Reduzido o padding em telas menores */
+  background: var(--branco-degrade-2);
+}
+
+.banner_content {
+  padding: 1em;
+  text-align: center;
+}
+
+.banner_title {
+  font-size: 2.5rem; /* Reduzido o font-size em telas menores */
+  font-weight: 800;
+  font-family: var(--fonte-two);
+  color: var(--tom-escuro);
+}
+
+.banner_text {
+  margin: 1.5rem 0 3rem; /* Reduzido o margin em telas menores */
+  font-size: 1.2rem; /* Reduzido o font-size em telas menores */
+  font-weight: 600;
+  color: var(--tom-escuro);
+}
+
+.btn_agendar {
+  text-decoration: none;
+  font-size: 18px; /* Reduzido o font-size em telas menores */
+  background-color: var(--cor-principal);
+  color: var(--branco);
+  padding: 8px 16px; /* Reduzido o padding em telas menores */
+  border-radius: 20px;
+  font-family: var(--fonte-two);
+  transition: 0.7s;
+}
+
+.btn_agendar:hover {
+  transform: scale(1.1); /* Reduzido o scale no hover em telas menores */
+  background-color: var(--branco);
+  color: var(--tom-escuro);
+}
+
+.icons {
+  display: flex;
+  justify-content: center; /* Centralizado os ícones em telas menores */
+  gap: 10px; /* Reduzido o gap em telas menores */
+  margin: 10px; /* Reduzido o margin em telas menores */
+}
+
+.icon_direct {
+  transition: 0.7s;
+}
+
+.icon_direct:hover {
+  transform: scale(1.1); /* Reduzido o scale no hover em telas menores */
+}
+
+.icon_img {
+  height: 2.5rem; /* Reduzido o height em telas menores */
+  width: 2.5rem; /* Reduzido o width em telas menores */
+  border-radius: 40%;
+}
+
+@media (max-width: 767px) {
+  .banner {
+      padding: 2em 1em 1em;
+  }
+
+  .banner_title {
+      font-size: 2.5rem;
+  }
+
+  .banner_text {
+      margin: 1.5rem 0 3rem;
+      font-size: 1.2rem;
+  }
+
+  .btn_agendar {
+      font-size: 18px;
+      padding: 8px 16px;
+      margin: 18px;
+  }
+
+  .btn_agendar:hover {
+      transform: scale(1.1);
+  }
+
+  .icons {
+      justify-content: center;
+      gap: 10px;
+      margin: 35px 15px 0;
+  }
+
+  .icon_direct:hover {
+      transform: scale(1.1);
+  }
+
+  .icon_img {
+      height: 2rem;
+      width: 2rem;
+  }
+}
+
+/* Media Query para Tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+  .banner {
+      padding: 4em 3em 1em; /* Ajuste padding para tablet */
+  }
+
+  .banner_title {
+      font-size: 3.5rem; /* Ajuste font-size para tablet */
+  }
+
+  .banner_text {
+      margin: 2rem 0 4rem; /* Ajuste margin para tablet */
+      font-size: 1.3rem; /* Ajuste font-size para tablet */
+  }
+
+  .btn_agendar {
+      font-size: 20px; /* Ajuste font-size para tablet */
+      padding: 10px 20px; /* Ajuste padding para tablet */
+      margin: 20px;
+  }
+
+  .icons {
+      justify-content: right; /* Volta para a direita em tablet */
+      gap: 15px; /* Volta para o gap original em tablet */
+      margin: 25px 20px; /* Volta para a margem original em tablet */
+  }
+
+  .icon_img {
+      height: 3rem; /* Volta para o tamanho original em tablet */
+      width: 3rem; /* Volta para o tamanho original em tablet */
+  }
+}
+
+/* Media Query para Desktop */
+@media (min-width: 992px) {
+  .banner {
+      padding: 7em 6em 1em; /* Volta para o padding original em desktop */
+  }
+
+  .banner_title {
+      font-size: 4.8rem; /* Volta para o font-size original em desktop */
+  }
+
+  .banner_text {
+      margin: 3rem 0 6rem; /* Volta para a margem original em desktop */
+      font-size: 1.5rem; /* Volta para o font-size original em desktop */
+  }
+
+  .btn_agendar {
+      font-size: 24px; /* Volta para o font-size original em desktop */
+      padding: 10px; /* Volta para o padding original em desktop */
+  }
+
+  .btn_agendar:hover {
+      transform: scale(1.2); /* Volta para o scale original no hover em desktop */
+  }
+
+  .icons {
+      justify-content: right; /* Volta para a direita em desktop */
+      gap: 15px; /* Volta para o gap original em desktop */
+      margin: 20px; /* Volta para a margem original em desktop */
+  }
+
+  .icon_direct:hover {
+      transform: scale(1.2); /* Volta para o scale original no hover em desktop */
+  }
+
+  .icon_img {
+      height: 3rem; /* Volta para o tamanho original em desktop */
+      width: 3rem; /* Volta para o tamanho original em desktop */
+  }
+}

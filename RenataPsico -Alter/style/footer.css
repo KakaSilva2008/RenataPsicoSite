@@ -1,0 +1,197 @@
+/* footer.css */
+.rodapé {
+    background: var(--branco-degrade-2);
+    padding: 1em 0; /* Adicionado padding para melhor espaçamento em telas menores */
+}
+
+.rodapé_main {
+    display: flex;
+    flex-direction: column; /* Alterado para coluna em telas menores */
+    align-items:end;
+    justify-content: center; /* Centralizado os elementos em telas menores */
+    gap: 1em; /* Adicionado gap para espaçamento entre os elementos em telas menores */
+}
+
+.rodapé_logo {
+    height: 60px; /* Reduzido o height em telas menores */
+    width: 120px; /* Reduzido o width em telas menores */
+    text-align: center;
+     /* Adicionado margem inferior para separar do texto em telas menores */
+}
+
+.creditos {
+    font-family: var(--fonte-two);
+    color: var(--tom-escuro);
+    text-align: center;
+}
+
+.creditos p {
+    text-align: center;
+    font-size: 12px; 
+}
+
+.icons_rodapé {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 5px; /* Reduzido o gap em telas menores */
+    
+}
+.links_rodapé{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items:baseline;
+}
+.redes_rodapé{
+    display: flex;
+    gap: 15px; /* Reduzido o gap em telas menores */
+}
+.icon_img_rodapé {
+    height: 30px; /* Reduzido o height em telas menores */
+    width: 30px; /* Reduzido o width em telas menores */
+    border-radius: 40%;
+}
+.btn{
+  background: none;       /* Remove o fundo padrão do botão */
+  border: none;           /* Remove a borda padrão do botão */
+  cursor: pointer;        /* Adiciona o cursor de "mãozinha" */
+  /* Resetando estilos que podem interferir */
+  -webkit-appearance: none; /* Remove estilos padrão no Safari */
+  -moz-appearance: none;    /* Remove estilos padrão no Firefox */
+  appearance: none;
+  line-height: 1;         /* Garante alinhamento correto */
+  overflow: visible;
+  margin: 0;             /* Remove margens padrão */
+  /* Se precisar de alinhamento vertical */
+  display: inline-block;
+}
+
+.link_text {
+    text-align: center;
+    text-decoration: none;
+    font-family: var(--fonte-one);
+    color: var(--cor-clara); /* Reduzido o padding em telas menores */
+    padding: 8px 0;
+    background-color: var(--cor-marrom);
+    border-radius: 10px;
+    font-size: 12px; /* Reduzido o font-size em telas menores */
+    width: 95px;
+    transition: 0.5s;
+    &:hover {
+        color: var(--branco);
+        background-color: var(--cor-principal-high);
+        border-radius: 10px;
+        transform: scale(1.2);
+      }
+}
+
+@media (max-width: 767px) {
+    .rodapé {
+        padding: 1em;
+    }
+
+    .rodapé_main {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+        padding: 10px;
+    }
+
+    .rodapé_logo {
+        height: 100px;
+        width: 200px;
+        margin-bottom: 1em;
+    }
+
+    .creditos p {
+        font-size: 12px;
+    }
+
+    .icons_rodapé {
+        gap: 10px;
+    }
+
+    .icon_img_rodapé {
+        height: 30px;
+        width: 30px;
+    }
+
+    .link_text {
+        padding: 8px;
+        font-size: 12px;
+    }
+    .btn {
+        padding: 8px;
+        font-size: 12px;
+        width: 111px;
+    }
+}
+
+/* Media Query para Tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+    .rodapé_main {
+        flex-direction: row; /* Volta para row em tablet */
+        justify-content: space-between; /* Volta para space-between em tablet */
+        padding: 10px 30px 0 30px; /* Volta para o padding original em tablet */
+    }
+
+    .rodapé_logo {
+        height: 130px; /* Volta para o height original em tablet */
+        width: 260px; /* Volta para o width original em tablet */
+        margin-bottom: 0; /* Remove a margem inferior em tablet */
+    }
+
+    .creditos p {
+        font-size: 14px; /* Aumenta o font-size em tablet */
+    }
+
+    .icons_rodapé {
+        gap: 15px; /* Aumenta o gap em tablet */
+    }
+
+    .icon_img_rodapé {
+        height: 36px; /* Volta para o height original em tablet */
+        width: 36px; /* Volta para o width original em tablet */
+    }
+
+    .link_text {
+        font-size: 14px; /* Aumenta o font-size em tablet */
+        padding: 10px; /* Volta para o padding original em tablet */
+    }
+    .btn{
+        font-size: 14px; /* Aumenta o font-size em tablet */
+        padding: 10px; /* Volta para o padding original em tablet */
+        width: 111px;
+    }
+}
+
+/* Media Query para Desktop */
+@media (min-width: 992px) {
+    .rodapé_main {
+        flex-direction: row; /* Volta para row em desktop */
+        justify-content: space-between; /* Volta para space-between em desktop */
+        padding: 10px 30px 0 30px; /* Volta para o padding original em desktop */
+    }
+
+    .rodapé_logo {
+        height: 100px; /* Reduzido o height em telas menores */
+        width: 180px;
+    }
+
+    .icons_rodapé {
+        gap: 20px; /* Volta para o gap original em desktop */
+    }
+
+    .icon_img_rodapé {
+        height: 36px; /* Volta para o height original em desktop */
+        width: 36px; /* Volta para o width original em desktop */
+    }
+
+    .link_text {
+        font-size: 14px; /* Volta para o font-size original em*/
+    }
+    .btn.link_text {
+        font-size: 14px; /* Volta para o font-size original em*/
+    }
+}

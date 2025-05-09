@@ -1,0 +1,98 @@
+.Saiba_mais{
+    background: var(--azul-degrade);
+    padding: 1em 0;
+}
+.Saiba_mais_title{
+    display: flex;
+    padding: 1em;
+    justify-content: center;
+}
+.Saiba_mais_title h1{
+    font-family: var(--fonte-principal);
+    text-align: center;
+    color: var(--branco);
+    font-size: 48px; /* Reduzido o font-size em telas menores */
+    padding: 0.25em; /* Reduzido o padding em telas menores */
+    letter-spacing: 2px; /* Reduzido o letter-spacing em telas menores */
+}
+.swiper-slide{
+    display: flex;
+    flex-direction: column; /* Alterado para coluna em telas menores */
+    align-items: center;
+    z-index: 2;
+}
+.swiper_card{
+    position: static;
+    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 1em; /* Aumentado o padding em telas menores */
+    height: auto; /* Alterado para auto para ajustar ao conteúdo */
+    width: 40%; /* Aumentado a largura em telas menores */
+    display: flex;
+    flex-direction: column; /* Alterado para coluna em telas menores */
+    align-items: center;
+    background-color: var(--branco);
+    margin-bottom: 1em; /* Adicionado margin-bottom em telas menores */
+}
+.swiper_card_title{
+    color: var(--tom-escuro);
+    margin: 1em;
+    font-size: 24px;
+    text-align: center;
+}
+.swiper_card_text{
+    line-height: 24px;
+    text-align: justify;
+    margin: 1.2em 4em;
+}
+.swiper_card_image{
+    width: 40%;
+    height: 35%;
+    border-radius: 10%;
+}
+.swiper_card_link{
+    color: var(--branco);
+    background-color: var(--tom-escuro);
+    padding: 0.5em;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 10px;
+    margin: 1em;
+    transition: 0.5s;
+    &:hover {
+        color: var(--branco);
+        background-color: var(--cor-principal-high);
+        border-radius: 10px;
+        transform: scale(1.2);
+      }
+}
+.swiper-button-next{
+    color: var(--branco)
+}
+.swiper-button-prev{
+    color: var(--branco)
+}
+@media (max-width: 767px) {
+    .swiper_card{
+        width: 70%;
+    }
+    .swiper_card_image{
+        width: 60%;
+        height: 40%;
+    }
+    .swiper_card_title{
+        margin: 1em 0.5em;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .swiper_card{
+        width: 55%;
+    }
+    .swiper_card_image{
+        width: 50%;
+        height: 35%;
+    }
+    .swiper_card_title{
+        margin: 1em 0.5em;
+    }
+}

@@ -1,0 +1,201 @@
+/* services.css */
+.type_services {
+    background: var(--branco-degrade);
+    margin-bottom: 2em; /* Reduzido o margin-bottom em telas menores */
+}
+
+.service_title {
+    font-family: var(--fonte-principal);
+    text-align: center;
+    color: var(--cor-principal);
+    font-size: 32px; /* Reduzido o font-size em telas menores */
+    padding: 0.25em; /* Reduzido o padding em telas menores */
+    font-weight: 600;
+    letter-spacing: 2px; /* Reduzido o letter-spacing em telas menores */
+}
+
+.painel_services {
+    display: flex;
+    flex-direction: column; /* Alterado para coluna em telas menores */
+    align-items: center; /* Centralizado os itens em telas menores */
+    gap: 1.5em; /* Aumentado o gap em telas menores */
+    margin: 1em 4em; /* Reduzido o margin em telas menores */
+}
+
+.service {
+    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 1em; /* Aumentado o padding em telas menores */
+    height: auto; /* Alterado para auto para ajustar ao conteúdo */
+    width: 90%; /* Aumentado a largura em telas menores */
+    display: flex;
+    flex-direction: column; /* Alterado para coluna em telas menores */
+    align-items: center;
+    background-color: var(--branco);
+    margin-bottom: 1em; /* Adicionado margin-bottom em telas menores */
+}
+
+.capa_service {
+    flex-direction: column;
+    text-align: center;
+    margin: 1em; /* Reduzido o margin em telas menores */
+}
+
+.img_service {
+    height: 12rem; /* Reduzido o height em telas menores */
+    width: 12rem; /* Reduzido o width em telas menores */
+    border-radius: 5%;
+}
+
+.description_service {
+    margin: 0.5em; /* Reduzido o margin em telas menores */
+    font-size: 20px; /* Reduzido o font-size em telas menores */
+    color: var(--tom-escuro);
+    font-family: var(--fonte-two);
+}
+
+.service_text {
+    text-indent: 20px; /* Reduzido o text-indent em telas menores */
+    margin: 0.5em; /* Reduzido o margin em telas menores */
+    font-size: 12px; /* Reduzido o font-size em telas menores */
+    line-height: 1.4; /* Reduzido o line-height em telas menores */
+    color: var(--preto);
+    text-align: justify;
+}
+@media (max-width: 767px) {
+    .type_services {
+        margin-bottom: 2em;
+    }
+
+    .service_title {
+        font-size: 32px;
+        padding: 0.25em;
+        letter-spacing: 2px;
+    }
+
+    .painel_services {
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+        margin: 1em;
+    }
+
+    .service {
+        padding: 1em;
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1em;
+    }
+
+    .capa_service {
+        margin: 1em;
+    }
+
+    .img_service {
+        height: 12rem;
+        width: 12rem;
+    }
+
+    .description_service {
+        margin: 0.5em;
+        font-size: 20px;
+    }
+
+    .service_text {
+        text-indent: 20px;
+        margin: 0.5em;
+        font-size: 12px;
+        line-height: 1.4;
+    }
+}
+
+/* Media Query para Tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+    .service_title {
+        font-size: 48px; /* Ajuste font-size para tablet */
+        padding: 0.4em; /* Ajuste padding para tablet */
+        letter-spacing: 2.5px; /* Ajuste letter-spacing para tablet */
+    }
+
+    .painel_services {
+        flex-direction: row; /* Volta para row em tablet */
+        justify-content: space-around; /* Volta para space-around em tablet */
+        flex-wrap: wrap; /* Adicionado para quebrar a linha em tablets menores */
+    }
+
+    .service {
+        width: 45%; /* Ajuste width para tablet */
+        height: auto; /* Mantém auto para ajustar ao conteúdo */
+        flex-direction: column; /* Garante que continue sendo coluna */
+        align-items: center; /* Garante que continue centralizado */
+        margin-bottom: 2em; /* Aumenta margin-bottom para espaçamento */
+    }
+
+    .img_service {
+        height: 14rem; /* Ajuste height para tablet */
+        width: 14rem; /* Ajuste width para tablet */
+    }
+
+    .description_service {
+        font-size: 24px; /* Ajuste font-size para tablet */
+    }
+
+    .service_text {
+        font-size: 14px; /* Ajuste font-size para tablet */
+        line-height: 1.5; /* Ajuste line-height para tablet */
+        text-indent: 30px; /* Ajuste text-indent para tablet */
+    }
+}
+
+/* Media Query para Desktop */
+@media (min-width: 992px) {
+    .type_services {
+        margin-bottom: 3em; /* Volta para o margin-bottom original em desktop */
+    }
+
+    .service_title {
+        font-size: 64px; /* Volta para o font-size original em desktop */
+        padding: 0.5em; /* Volta para o padding original em desktop */
+        letter-spacing: 3px; /* Volta para o letter-spacing original em desktop */
+    }
+
+    .painel_services {
+        flex-direction: row; /* Volta para row em desktop */
+        justify-content: space-around; /* Volta para space-around em desktop */
+        gap: 5%; /* Volta para o gap original em desktop */
+        margin: 1rem 1rem; /* Volta para o margin original em desktop */
+        flex-wrap: nowrap; /* Impede a quebra de linha em desktop */
+    }
+
+    .service {
+        width: 700px; /* Volta para o width original em desktop */
+        height: 400px; /* Volta para o height original em desktop */
+        flex-direction: row; /* Volta para row em desktop */
+        align-items: center; /* Volta para align-items original em desktop */
+        padding: 0.25em 1em; /* Volta para o padding original em desktop */
+    }
+
+    .capa_service {
+        flex-direction: column; /* Volta para flex-direction original em desktop */
+        text-align: center; /* Volta para text-align original em desktop */
+        margin: 1em; /* Volta para o margin original em desktop */
+    }
+
+    .img_service {
+        height: 16rem; /* Volta para o height original em desktop */
+        width: 16rem; /* Volta para o width original em desktop */
+    }
+
+    .description_service {
+        margin: 0.2em; /* Volta para o margin original em desktop */
+        font-size: 28px; /* Volta para o font-size original em desktop */
+    }
+
+    .service_text {
+        text-indent: 40px; /* Volta para o text-indent original em desktop */
+        margin: 1em; /* Volta para o margin original em desktop */
+        font-size: 14px; /* Volta para o font-size original em desktop */
+        line-height: 1.6; /* Volta para o line-height original em desktop */
+    }
+}
